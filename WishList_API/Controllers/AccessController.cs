@@ -96,14 +96,5 @@ namespace WishList_API.Controllers
 
             return Ok();
         }
-
-        [HttpGet]
-        [Route("Test")]
-        public IHttpActionResult Test()
-        {
-            var x = _db.Users.ToList();            
-
-            return Ok(x);
-        }
     }
 }
